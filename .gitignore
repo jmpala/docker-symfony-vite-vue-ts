@@ -1,5 +1,6 @@
 /.vscode
 /.idea
+/logs
 /logs/nginx/*
 /docker/postgres/data/*
 
@@ -27,3 +28,12 @@
 /node_modules/
 /public/build/
 ###< pentatrion/vite-bundle ###
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
+
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor/
+###< symfony/asset-mapper ###

@@ -30,6 +30,8 @@ services:
             - postgres
         volumes:
             - .:/var/www
+        extra_hosts:
+            - host.docker.internal:host-gateway
     postgres:
         build:
           context: ./docker/postgres

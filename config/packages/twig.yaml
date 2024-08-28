@@ -1,7 +1,5 @@
 twig:
-    default_path: '%kernel.project_dir%/templates'
-    globals:
-      _version: '1.0'
+    file_name_pattern: '*.twig'
 
 when@test:
     twig:

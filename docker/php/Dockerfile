@@ -1,12 +1,10 @@
 FROM php:fpm-alpine
 
-LABEL maintainer="sergey@volkar.ru"
-
 # Copy php config
 COPY ./conf/php.ini /usr/local/etc/php/php.ini
 
 # Packages
-RUN apk add --no-cache curl git build-base zlib-dev oniguruma-dev autoconf icu-dev bash
+RUN apk add --no-cache curl git build-base zlib-dev oniguruma-dev autoconf icu-dev bash linux-headers
 
 # GD (png, jpeg, webp, freetype)
 RUN apk add --no-cache \
